@@ -1,1 +1,55 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
+
+body {
+  background-image: url("https://cdn.pixabay.com/photo/2022/06/13/22/32/casino-7260767_960_720.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+.bg-contenedor {
+  background-color: #ffffff70;
+}
+
+.img-contenedor {
+  width: 100%;
+  height: 100%;
+  padding: 2%;
+}
+
+.card {
+  height: 100px;
+  width: 50px;
+  background-color: white;
+  margin-top: 40px;
+  border-radius: 1rem;
+  flex-direction: column;
+}
+
+.suitup {
+  font-size: 3rem;
+  align-self: flex-start;
+  padding-left: 1rem;
+  position: relative;
+  top: -15px;
+}
+
+.num {
+  font-size: 6rem;
+  align-self: center;
+  justify-content: center;
+  position: relative;
+}
+
+.suitdown {
+  font-size: 3rem;
+  align-self: flex-end;
+  justify-content: end;
+  transform: rotate(180deg);
+  padding-left: 1rem;
+  position: relative;
+  bottom: -15px;
+}
+
+.red {
+  color: red;
+}

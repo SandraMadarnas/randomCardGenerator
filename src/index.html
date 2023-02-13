@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
+    <title>Random Card Generator</title>
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
@@ -13,17 +13,51 @@
     <link rel="shortcut icon" href="./4geeks.ico" />
   </head>
   <body>
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
+    <section class="m-2">
+      <div class="container bg-contenedor justify-content-center">
+        <div class="row">
+          <div class="col-12">
+            <h1 class="jumbotron-heading">Random Card Generator</h1>
+            <p>
+              Crea un algoritmo que genere aleatoriamente una carta cada vez que
+              le demos al botón de <strong>"Generar Nueva Carta"</strong>
+            </p>
+            <ul>
+              <li>
+                <p>
+                  La carta debe ser: Corazones, Diamantes, Tréboles o Picas.
+                </p>
+              </li>
+              <li>
+                <p>
+                  El valor de la carta debe ser uno de los siguientes: 2 a 10,
+                  Rey, Reina, Jota o As (sin comodín).
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
+
+    <section class="m-2">
+      <div class="container bg-contenedor justify-content-center">
+        <div class="row">
+          <div class="col-12 col-sm-6">
+            <img
+              class="img-contenedor"
+              src="https://cdn.pixabay.com/photo/2022/06/13/22/32/casino-7260767_960_720.jpg"
+            />
+          </div>
+          <div class="col-12 col-sm-6">
+            <!-- <div class="card heart">A</div> -->
+            <button>Generar una nueva carta</button>
+            <div class="card">
+              <span id="display"> </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
