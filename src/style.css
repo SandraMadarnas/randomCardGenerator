@@ -7,7 +7,8 @@ body {
 }
 
 .bg-contenedor {
-  background-color: #ffffff70;
+  background-color: #ffffffa3;
+  margin-top: 2%;
 }
 
 .img-contenedor {
@@ -17,8 +18,8 @@ body {
 }
 
 .card {
-  height: 100px;
-  width: 50px;
+  height: 200px;
+  width: 150px;
   background-color: white;
   margin-top: 40px;
   border-radius: 1rem;
@@ -52,4 +53,38 @@ body {
 
 .red {
   color: red;
+}
+
+.black {
+  color: black;
+}
+
+.boton {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  padding: 12px 20px;
+  font-size: 18px;
+  border-radius: 10px;
+  background-color: #cbaa85;
+  box-shadow: 0 5px 5px #313131, 0 9px 0 #393939;
+  position: relative;
+  display: inline-block;
+  font-family: Arial, Helvetica, sans;
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.2);
+}
+.boton:hover {
+  box-shadow: 0 5px 5px #313131, 0 9px 0 #393939,
+    0px 9px 10px rgba(0, 0, 0, 0.4), inset 0px 2px 15px rgba(255, 255, 255, 0.4),
+    inset 0 -2px 9px rgba(0, 0, 0, 0.2);
+}
+.boton:active {
+  top: 7px;
+  box-shadow: 0 2px 0 #393939, 0px 4px 4px rgba(0, 0, 0, 0.4),
+    inset 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+.formaBoton {
+  border-radius: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
 }
