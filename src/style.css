@@ -1,9 +1,17 @@
 @import "~bootstrap/dist/css/bootstrap.min.css";
 
+:root {
+  margin: 0 auto;
+  padding: 0 auto;
+}
+
 body {
   background-image: url("https://cdn.pixabay.com/photo/2022/06/13/22/32/casino-7260767_960_720.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
 }
 @media screen and (max-width: 1024px) {
   body {
@@ -12,55 +20,61 @@ body {
 }
 
 .bg-contenedor {
-  background-color: #ffffffa3;
+  background-color: #ffffff82;
   margin-top: 2%;
 }
 
-.img-contenedor {
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
+.contenedor {
+  background-color: #ffffff82;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.blackjack {
+  background-image: url("https://cdn.pixabay.com/photo/2022/06/13/22/32/casino-7260767_960_720.jpg");
 }
 @media screen and (max-width: 1024px) {
-  .img-contenedor {
+  .blackjack {
     display: none;
   }
 }
 
 .card {
   height: 300px;
-  width: 250px;
-  background-color: white;
-  margin-top: 40px;
-  /* margin-left: 70px; */
-  border-radius: 1rem;
-  border: #000;
+  width: 200px;
+  background-color: #fff;
+  background-image: url("https://img.freepik.com/foto-gratis/fondo-textura-papel_53876-30486.jpg?w=996&t=st=1676507149~exp=1676507749~hmac=cef3cd74101bd133834ace63bd67bf7371bbf4683411dd9826db55dad8d00d1d");
+  border-radius: 2rem;
+  border: 2px black;
   flex-direction: column;
+  text-align: center;
+  margin: 0 auto;
 }
 
 .suitup {
-  font-size: 3rem;
-  align-self: flex-start;
-  padding-left: 1rem;
   position: relative;
-  top: -10px;
+  top: 2px;
+  right: 55px;
+  font-size: 50px;
+  text-shadow: -2px 1px 9px rgb(54, 41, 41);
+  align-content: flex-start;
 }
 
 .num {
-  font-size: 6rem;
-  align-self: center;
-  justify-content: center;
-  position: relative;
+  font-size: 90px;
+  font-weight: bold;
+  text-shadow: -2px 1px 9px rgb(54, 41, 41);
+  align-items: center;
 }
 
 .suitdown {
-  font-size: 3rem;
-  align-self: flex-end;
-  justify-content: end;
-  transform: rotate(180deg);
-  padding-left: 1rem;
   position: relative;
-  bottom: -15px;
+  bottom: 2px;
+  left: 55px;
+  font-size: 50px;
+  transform: rotate(180deg);
+  text-shadow: -2px 1px 9px rgb(54, 41, 41);
+  align-items: flex-end;
 }
 
 .red {
@@ -75,6 +89,7 @@ body {
   border-radius: 10px;
   padding-left: 25px;
   padding-right: 25px;
+  margin-bottom: 5%;
 }
 
 .boton {
@@ -87,10 +102,7 @@ body {
   background-color: #cbaa85;
   box-shadow: 0 5px 5px #313131, 0 9px 0 #393939;
   position: relative;
-  margin-right: 2%;
-  /* margin-left: 70px; */
   display: inline-block;
-  font-family: Arial, Helvetica, sans;
   text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.2);
 }
 .boton:hover {
